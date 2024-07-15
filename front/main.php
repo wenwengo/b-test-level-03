@@ -53,7 +53,6 @@
         let ani = parseInt($(".poster").eq(now).data('ani'))
 
         if (now < $(".poster").length - 1) {
-            // 使用next=now + 1，將不會更動到now的值。（勿使用now++，以免誤將now值異常變更）
             next = now + 1;
         } else {
             next = 0
@@ -81,8 +80,7 @@
                 break;
         }
 
-        now = next;
-        // 
+        now = next
 
     }
 
